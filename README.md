@@ -14,6 +14,7 @@ Through this practice project, you'll gain foundational knowledge about:
 Certain test methods related to the Book and Person classes are currently commented out and will need to be uncommented and deployed once the relevant classes are set up.
 
 ## Setup
+[Setup Video](https://vimeo.com/839597882/46fc06d93e)
 
 To get started, you'll need a Salesforce Trailhead Playground. If you don't have one, you can create it for free from any Trailhead module.
 
