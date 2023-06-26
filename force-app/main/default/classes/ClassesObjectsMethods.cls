@@ -20,7 +20,7 @@
  * The Book class is a simple representation of a book with properties like title and author, and methods
  * to read and close the book.
  * 
- * @author Warren Walters - Cloud Code Academy
+ * @author Your Name
  * @version 1.0
  */
 
