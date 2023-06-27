@@ -8,13 +8,14 @@ Through this practice project, you'll gain foundational knowledge about:
 - How to create and use objects in Apex.
 - The principles of encapsulation and the importance of getter and setter methods.
 - The interaction between objects, specifically object references and passing objects to methods.
-- This foundational knowledge will prepare you for more advanced topics in Salesforce development, such as inheritance, interfaces, and polymorphism. The curriculum includes practical examples with classes such as Person and Book to solidify these concepts.
+
+This foundational knowledge will prepare you for more advanced topics in Salesforce development, such as inheritance, interfaces, and polymorphism. The curriculum includes practical examples with classes such as Person and Book to solidify these concepts.
 
 ## Note
 Certain test methods related to the Book and Person classes are currently commented out and will need to be uncommented and deployed once the relevant classes are set up.
 
 ## Setup
-[Setup Video](https://vimeo.com/839597882/46fc06d93e)
+[Video Overview](https://vimeo.com/839597882/46fc06d93e)
 
 To get started, you'll need a Salesforce Trailhead Playground. If you don't have one, you can create it for free from any Trailhead module.
 
