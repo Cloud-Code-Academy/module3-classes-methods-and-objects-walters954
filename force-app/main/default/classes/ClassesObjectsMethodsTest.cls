@@ -75,7 +75,7 @@ public with sharing class ClassesObjectsMethodsTest {
     @IsTest
     static void testFindTheScientist() {
         String result = ClassesObjectsMethods.findTheScientist();
-        Assert.areEqual('Grace Hopper,Guido van Rossum', result, 'Incorrect concatenated string');
+        Assert.areEqual('Alan Turing,Grace Hopper,Guido van Rossum,Stephen Hawking', result, 'Incorrect concatenated string');
 
     }
 

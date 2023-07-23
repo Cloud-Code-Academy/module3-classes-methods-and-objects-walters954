@@ -106,14 +106,14 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * Loops over the list of scientists and concatenates their names together with a comma if it contains the letter 'G'.
+     * Loops over the list of scientists and concatenates their names together with a comma if it contains the letter 'g'.
      * The final string should not end with a comma.
-     * Example: findTheScientist() should return "Grace Hopper,Guido van Rossum"
-     * @return The concatenated string of scientists' names that contain the letter 'G'.
+     * Example: findTheScientist() should return "Alan Turing,Grace Hopper,Guido van Rossum,Stephen Hawking"
+     * @return The concatenated string of scientists' names that contain the letter 'g'.
      */
     public static String findTheScientist() {
         // The list of scientists' names
-        List<String> scientistNames = new List<String>{'Tim Berners-Lee', 'Alan Turing', 'Grace Hopper', 'Donald Knuth', 'Guido van Rossum', 'Ken Thompson'};
+        List<String> scientistNames = new List<String>{'Tim Berners-Lee', 'Alan Turing', 'Grace Hopper', 'Donald Knuth', 'Guido van Rossum', 'Ken Thompson', 'Stephen Hawking'};
 
         // The variable to store the concatenated string
 
