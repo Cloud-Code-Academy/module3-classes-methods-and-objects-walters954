@@ -85,6 +85,50 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * This method takes a string as a parameter, and calculates the number of vowels in the string.
+     * For simplicity, we will consider only five vowels: 'a', 'e', 'i', 'o', 'u', and we will ignore case.
+     * Example: countVowels("Hello World!") should return 3
+     * @param s The string in which to count vowels.
+     * @return The number of vowels in the string.
+     */
+    public static Integer countVowels(String str) {
+        // Initialize the result Integer
+
+        /*
+        for () {
+            // get individual characters from the string - hint use substring or split
+            // check if the character is a vowel
+            // if it is a vowel, increment the result Integer
+        }
+        */
+
+        return null; // Replace null with the variable you used to store the result
+    }
+
+    /**
+     * Loops over the list of scientists and concatenates their names together with a comma if it contains the letter 'G'.
+     * The final string should not end with a comma.
+     * Example: findTheScientist() should return "Grace Hopper,Guido van Rossum"
+     * @return The concatenated string of scientists' names that contain the letter 'G'.
+     */
+    public static String findTheScientist() {
+        // The list of scientists' names
+        List<String> scientistNames = new List<String>{'Tim Berners-Lee', 'Alan Turing', 'Grace Hopper', 'Donald Knuth', 'Guido van Rossum', 'Ken Thompson'};
+
+        // The variable to store the concatenated string
+
+        // Loop through the list of scientists' names
+
+            // If the name doesn't contain the letter 'G', skip this iteration
+
+            // Add the name to the result string, followed by a comma
+
+        // Remove the last comma from the result string
+
+        return null; // Replace null with the variable you used to store the result
+    }
+
+    /**
      * This method takes a number as input and calculates its square root.
      * Example: calculateSquareRoot(4) should return 2.
      * @param num The input number.

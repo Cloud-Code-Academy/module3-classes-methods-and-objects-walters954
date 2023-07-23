@@ -61,6 +61,25 @@ public with sharing class ClassesObjectsMethodsTest {
     }
 
     @IsTest
+    static void testCountVowels() {
+        Integer result = ClassesObjectsMethods.countVowels('Hello World!');
+        Assert.areEqual(3, result, 'Incorrect vowel count for "Hello World!"');
+        
+        result = ClassesObjectsMethods.countVowels('Supra');
+        Assert.areEqual(2, result, 'Incorrect vowel count for "Supra"');
+        
+        result = ClassesObjectsMethods.countVowels('The quick brown fox jumps over the lazy dog');
+        Assert.areEqual(11, result, 'Incorrect vowel count for "The quick brown fox jumps over the lazy dog"');
+    }
+
+    @IsTest
+    static void testFindTheScientist() {
+        String result = ClassesObjectsMethods.findTheScientist();
+        Assert.areEqual('Grace Hopper,Guido van Rossum', result, 'Incorrect concatenated string');
+
+    }
+
+    @IsTest
     static void testCalculateSquareRoot() {
         // Test case 1
         Double input1 = 4.0;
