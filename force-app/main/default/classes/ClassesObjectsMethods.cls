@@ -140,7 +140,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method calculates the absolute value of the difference between the squares roots of two input numbers.
+     * This method calculates the absolute value of the difference between of two input numbers that are raised to the 2nd power.
      * Example: calculateDifferenceOfSquares(3, 4) should return 7.
      * @param a The first number.
      * @param b The second number.
