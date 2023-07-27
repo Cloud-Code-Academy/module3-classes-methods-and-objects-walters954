@@ -169,8 +169,8 @@ public with sharing class ClassesObjectsMethods {
 
     /**
      * This method returns the current date formatted
-     * Example: getCurrentDate() should return a string like "3/21/2001" for US locale.
-     * @return The current date in the current user locale.
+     * Example: getCurrentDate() should return a string like "3/21/2001" for US locale users. Locale/String may differ depending on your location.
+     * @return The current date in the current user locale format.
      */
     public static String getCurrentDate() {
         // Get the current date
