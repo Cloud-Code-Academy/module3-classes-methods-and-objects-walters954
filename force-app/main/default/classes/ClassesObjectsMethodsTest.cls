@@ -261,12 +261,12 @@ public with sharing class ClassesObjectsMethodsTest {
 
     /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
-    static void testBookDetails() {
+    static void testGenerateBookList() {
         // Create a Book instance
         ClassesObjectsMethods.Book myTestBook = new ClassesObjectsMethods.Book('Test Title', 'Test Author');
         
-        // Call the bookDetails method and capture the return value
-        List<ClassesObjectsMethods.Book> result = ClassesObjectsMethods.bookDetails(myTestBook);
+        // Call the generateBookList method and capture the return value
+        List<ClassesObjectsMethods.Book> result = ClassesObjectsMethods.generateBookList(myTestBook);
 
         // Define the expected result
         List<ClassesObjectsMethods.Book> expectedResult = new List<ClassesObjectsMethods.Book>{
