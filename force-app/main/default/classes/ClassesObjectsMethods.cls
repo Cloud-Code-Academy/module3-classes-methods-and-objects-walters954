@@ -183,12 +183,12 @@ public with sharing class ClassesObjectsMethods {
 
     /**
      * This method returns the day of the week for a given date.
-     * Example: getDayOfWeek('2021-01-01') should return "Friday".
-     * @param d The date for which the day of the week is required.
-     * @return The day of the week.
+     * @param dt the current date and time
+     * @return The number of the day of the week for the given date.
      */
-    public static String getDayOfWeek(Date d) {
+    public static String getDayOfWeek(DateTime dt) {
         // Define a map of day of the week as a key and day number as the value
+        // Monday = 1, Tuesday = 2, etc.
 
         // Get the day name using .format('EEEE');
 

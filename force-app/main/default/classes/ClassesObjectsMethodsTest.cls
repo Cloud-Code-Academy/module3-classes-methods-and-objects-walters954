@@ -156,27 +156,27 @@ public with sharing class ClassesObjectsMethodsTest {
     @IsTest
     static void testGetDayOfWeek() {
         // Get today's date
-        Date today = Date.today();
+        DateTime now = DateTime.now();
         
         // Use the method to get the day of the week
-        String dayOfWeek = ClassesObjectsMethods.getDayOfWeek(today);
+        String dayOfWeek = ClassesObjectsMethods.getDayOfWeek(now);
 
         // Assert that the result is not null
         Assert.isNotNull(dayOfWeek, 'Returned day of the week is null');
 
-        // Create a map to validate the result
-        Map<String, Integer> daysOfWeek = new Map<String, Integer>{
-            'Sunday' => 1, 
-            'Monday' => 2, 
-            'Tuesday' => 3, 
-            'Wednesday' => 4, 
-            'Thursday' => 5, 
-            'Friday' => 6, 
-            'Saturday' => 7
+        Map<String, String> dayNumberToDayString = new Map<String, String>{
+            '1' => 'Monday',
+            '2' => 'Tuesday',
+            '3' => 'Wednesday',
+            '4' => 'Thursday',
+            '5' => 'Friday',
+            '6' => 'Saturday',
+            '7' => 'Sunday'
         };
 
         // Assert that the returned day number is a valid day of the week
-        Assert.isTrue(daysOfWeek.values().contains(Integer.valueOf(dayOfWeek)), 'Returned day of the week ' + dayOfWeek + ' is not valid');
+        Assert.isTrue(dayNumberToDayString.keySet().contains(dayOfWeek), 'Returned day of the week ' + dayOfWeek + ' is not valid');
+        Assert.areEqual(Datetime.now().format('EEEE'), dayNumberToDayString.get(dayOfWeek), 'Returned day of the week ' + dayOfWeek + ' does not match the expected day of the week ' + Datetime.now().format('EEEE'));
     }
 
     @IsTest
@@ -231,7 +231,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.isNull(result, 'Result should be null for null input');
     }
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testBookClass() {
         // Initialize a new book instance
@@ -259,7 +259,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(expectedResult, result, 'The method should return the correct book details');
     }
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testGenerateBookList() {
         // Create a Book instance
@@ -284,7 +284,7 @@ public with sharing class ClassesObjectsMethodsTest {
     }
     */
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testPersonClass() {
         // Initialize a new Person instance
