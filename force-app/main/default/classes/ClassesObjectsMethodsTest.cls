@@ -281,6 +281,9 @@ public with sharing class ClassesObjectsMethodsTest {
             Assert.areEqual(expectedResult[i].title, result[i].title, 'Title of book at index ' + i + ' should match');
             Assert.areEqual(expectedResult[i].author, result[i].author, 'Author of book at index ' + i + ' should match');
         }
+
+        Assert.areEqual(352, result[0].pages, 'Pages of book at index 0 should match');
+        Assert.areEqual(256, result[1].pages, 'Pages of book at index 1 should match');
     }
     */
 

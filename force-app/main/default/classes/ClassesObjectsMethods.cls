@@ -233,9 +233,10 @@ public with sharing class ClassesObjectsMethods {
      * where you need to manipulate and manage book information.
      */
     public class Book {
-        // Declare two public instance variables - title and author
-        // String title
-        // String author
+        // Declare three public instance variables - title, author, pages
+        // title
+        // author
+        // pages
     
         // Book constructor to initialize the title and author
         public Book() {
@@ -267,14 +268,21 @@ public with sharing class ClassesObjectsMethods {
     /**
      * This method create/updates two Book objects and returns the details of both books.
      * For example, generateBookList(Book) should return a list like ["Title: Harry Potter and the Chamber of Secrets, Author: J.K. Rowling", "Title: A Brief History of Time, Author: Stephen Hawking"].
-     * Book 1 values: title = "Harry Potter and the Chamber of Secrets", author = "J.K. Rowling"
+     * Update Book 1 values: title = "Harry Potter and the Chamber of Secrets", author = "J.K. Rowling", pages = 352
      * Book 2 values: title = "A Brief History of Time", author = "Stephen Hawking"
+     * @param myBook1 The first book object.
      * @return A string containing the details of the book.
      */
     public static List<Book> generateBookList(Book myBook1) {
         // Create a list of books
 
-        // Update the title and author of the input parameter book
+        // Update the title and author of myBook1
+
+        // Update the pages for myBook1 to 352
+
+        // Create a new Book object with title "A Brief History of Time" and author "Stephen Hawking"
+
+        // Update the pages for A Breif History of Time to 256
 
         // Add the book to the list
         
