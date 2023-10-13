@@ -126,7 +126,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.isNotNull(result, 'The returned date string is null');
         
         // Assert that the returned date is equal to the expected date
-        Assert.areEqual(Date.today().format(), result, 'The returned date string ' + result + ' does not match the current date ' + expectedDate);
+        Assert.areEqual(Date.today().format(), result, 'The returned date string ' + result + ' does not match the current date ' + Date.today().format());
     }
 
     @IsTest
