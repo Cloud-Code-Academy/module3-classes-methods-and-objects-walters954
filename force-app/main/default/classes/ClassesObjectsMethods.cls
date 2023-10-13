@@ -20,13 +20,17 @@
  * The Book class is a simple representation of a book with properties like title and author, and methods
  * to read and close the book.
  * 
+ * Resources:
+ * String class: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm
+ * Date class: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm
+ * Math class: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm
+ * Classes: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_understanding.htm
+ *
  * @author Your Name
- * @version 1.0
  */
 
 public with sharing class ClassesObjectsMethods {
     /**
-     * This method demonstrates usage of Apex String class methods.
      * It initializes a String to "Hello, Salesforce!" and demonstrates usage of
      * the length, substring, and toLowerCase methods of the String class.
      * Example: practiceStringMethods() should return a list like ["17", "Hello", "hello, salesforce!"].
@@ -48,7 +52,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method checks if the input string starts with 'Sales', ends with 'Force', or contains 'Awesome'.
+     * Check if the input string starts with 'Sales', ends with 'Force', and contains 'Awesome'.
      * Example: checkStringContent('Salesforce is Awesome!') should return a list like [true, false, true].
      * @param input The input string.
      * @return A list of boolean values indicating whether the string starts with 'Sales', ends with 'Force', or contains 'Awesome'.
@@ -66,7 +70,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method takes a sentence as input, removes any duplicate words, and returns the sentence with only unique words.
+     * Take a sentence then remove any duplicate words, and return the sentence with only unique words.
      * Example: removeDuplicateWords('Hello, Hello, Salesforce!') should return 'Hello, Salesforce!'.
      * @param sentence The input sentence.
      * @return A string consisting of only unique words from the input sentence.
@@ -106,10 +110,10 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * Loops over the list of scientists and concatenates their names together with a comma if it contains the letter 'g'.
+     * Given a list of scientist names, combine their names together with a comma if it contains the letter 'g'.
      * The final string should not end with a comma.
      * Example: findTheScientist() should return "Alan Turing,Grace Hopper,Guido van Rossum,Stephen Hawking"
-     * @return The concatenated string of scientists' names that contain the letter 'g'.
+     * @return A string containing the names of scientists that contain the letter 'g'.
      */
     public static String findTheScientist() {
         // The list of scientists' names
@@ -125,17 +129,6 @@ public with sharing class ClassesObjectsMethods {
 
         // Remove the last comma from the result string
 
-        return null; // Replace null with the variable you used to store the result
-    }
-
-    /**
-     * This method takes a number as input and calculates its square root.
-     * Example: calculateSquareRoot(4) should return 2.
-     * @param num The input number.
-     * @return The square root of the input number.
-     */
-    public static Double calculateSquareRoot(Double num) {
-        // Return the square root
         return null; // Replace null with the variable you used to store the result
     }
 
@@ -156,24 +149,24 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method generates a random integer between 50 and 100 using the Math.random() function.
+     * Generate a random number between 50 and 100
      * Example: generateRandomNumber() should return a number like 75.
-     * @return A random integer between 50 and 100.
+     * @return A integer between 50 and 100.
      */
     public static Integer generateRandomNumber() {
-        // Generate a random number between 0 and 1 using Math.random(), multiply by 50 to get a number between 0 and 50, then add 50 to shift the range to 50-100.
+        // Use Math class to generate number between 50 and 100
 
         // Return the random integer
         return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * This method returns the current date formatted
+     * Format the current date in the current user locale format.
      * Example: getCurrentDate() should return a string like "3/21/2001" for US locale users. Locale/String may differ depending on your location.
      * @return The current date in the current user locale format.
      */
     public static String getCurrentDate() {
-        // Get the current date
+        // Get the todays date
 
         // Format the current date
 
@@ -182,7 +175,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method returns the day of the week for a given date.
+     * Given a date time return the day of the week in number format
      * @param dt the current date and time
      * @return The number of the day of the week for the given date.
      */
@@ -200,29 +193,17 @@ public with sharing class ClassesObjectsMethods {
 
 
     /**
-     * This method calculates the difference between two dates in years, rounded down.
-     * For example, if the first date is 2023-01-01 and the second date is 2025-12-31, the method should return 2, not 3.
+     * Calculate the difference between the years of two dates
+     * For example, if the first date is 2023-01-01 and the second date is 2025-12-31, the method should return 2
      * If either of the dates is null, return null.
      * @param d1 The first date.
      * @param d2 The second date.
-     * @return The number of full years between the two dates, or null if either date is null.
+     * @return The a positive number years between the two dates, or null if either date is null.
      */
     public static Integer calculateYearDifference(Date d1, Date d2) {
 
-        // Calculate the difference in years
+        // Subtract the difference in years
 
-        return null; // Replace null with the variable you used to store the result
-    }
-
-    /**
-     * Create method named calculateAbsoluteValue that takes an Integer as input and returns an Integer.
-     * This method calculates the absolute value of a given number.
-     * For example, absoluteValue(-5) should return 5, and absoluteValue(3) should return 3.
-     * If the input is null, return null.
-     * @param num The number for which the absolute value is to be calculated.
-     * @return The absolute value of the input number, or null if the input is null.
-     */
-    public static Integer calculateAbsoluteValue(Integer num) {
         return null; // Replace null with the variable you used to store the result
     }
 
@@ -252,7 +233,7 @@ public with sharing class ClassesObjectsMethods {
     
 
     /**
-     * This method creates a Book object and returns the details of the book.
+     * Create a Book object and returns the details of the book.
      * For example, createAndGetBookDetails() should return a string like "Title: A Brief History of Time, Author: Stephen Hawking".
      * @return A string containing the details of the book.
      */
@@ -266,7 +247,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method create/updates two Book objects and returns the details of both books.
+     * Create and update two Book objects and returns the details of both books.
      * For example, generateBookList(Book) should return a list like ["Title: Harry Potter and the Chamber of Secrets, Author: J.K. Rowling", "Title: A Brief History of Time, Author: Stephen Hawking"].
      * Update Book 1 values: title = "Harry Potter and the Chamber of Secrets", author = "J.K. Rowling", pages = 352
      * Book 2 values: title = "A Brief History of Time", author = "Stephen Hawking"
@@ -282,7 +263,7 @@ public with sharing class ClassesObjectsMethods {
 
         // Create a new Book object with title "A Brief History of Time" and author "Stephen Hawking"
 
-        // Update the pages for A Breif History of Time to 256
+        // Update the pages for A Brief History of Time to 256
 
         // Add the book to the list
         
@@ -315,7 +296,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This method creates a Person object and returns the details of the person.
+     * Create a Person object and returns the details of the person.
      * For example, personDetails() should return a list like ["Hello, my name is John Doe and I am 28 years old.", "John Doe", "28"].
      * @return A string containing the details of the person.
      */
@@ -335,8 +316,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * In this practice problem, you will create a method that takes two parameters, 
-     * a name and an age, and returns a new instance of the Person class.
+     * Create a Person object with the provided name and age.
      * 
      * @param name The name of the person.
      * @param age The age of the person.
@@ -350,7 +330,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * This practice problem asks you to create a method that constructs multiple Person objects.
+     * Create a method that constructs multiple Person objects.
      * You are to create a new Person object for each name in the provided List<String> of names,
      * using the same age for all Person objects. The method should return a List<Person> of all the Person objects created. 
      * @param names A list of names.
@@ -371,7 +351,7 @@ public with sharing class ClassesObjectsMethods {
 
 
     /**
-     * This practice problem asks you to create a method that compares two Person objects based on their ages.
+     * Compare two Person objects based on their ages.
      * If the first Person is older, the method should return the first Person. If the second Person is older, it should return the second Person.
      * If they are the same age, return either.
      *

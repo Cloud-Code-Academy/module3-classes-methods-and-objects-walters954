@@ -80,27 +80,6 @@ public with sharing class ClassesObjectsMethodsTest {
     }
 
     @IsTest
-    static void testCalculateSquareRoot() {
-        // Test case 1
-        Double input1 = 4.0;
-        Double result1 = ClassesObjectsMethods.calculateSquareRoot(input1);
-        Double expected1 = 2.0;
-        Assert.areEqual(expected1, result1, 'Incorrect square root for ' + input1);
-
-        // Test case 2
-        Double input2 = 9.0;
-        Double result2 = ClassesObjectsMethods.calculateSquareRoot(input2);
-        Double expected2 = 3.0;
-        Assert.areEqual(expected2, result2, 'Incorrect square root for ' + input2);
-
-        // Test case 3
-        Double input3 = 16.0;
-        Double result3 = ClassesObjectsMethods.calculateSquareRoot(input3);
-        Double expected3 = 4.0;
-        Assert.areEqual(expected3, result3, 'Incorrect square root for ' + input3);
-    }
-
-    @IsTest
     static void testCalculateDifferenceOfSquares() {
         // Test case 1
         Double a1 = 4.0;
@@ -145,12 +124,9 @@ public with sharing class ClassesObjectsMethodsTest {
     
         // Assert that the result is not null
         Assert.isNotNull(result, 'The returned date string is null');
-    
-        // Get today's date and format it to match the method's format
-        String expectedDate = Date.today().format();
         
         // Assert that the returned date is equal to the expected date
-        Assert.areEqual(expectedDate, result, 'The returned date string ' + result + ' does not match the current date ' + expectedDate);
+        Assert.areEqual(Date.today().format(), result, 'The returned date string ' + result + ' does not match the current date ' + expectedDate);
     }
 
     @IsTest
@@ -206,29 +182,6 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.isNull(result, 'Year difference should be null if one date is null');
         result = ClassesObjectsMethods.calculateYearDifference(null, null);
         Assert.isNull(result, 'Year difference should be null if both dates are null');
-    }
-
-    @IsTest
-    static void testCalculateAbsoluteValue() {
-        // Test with positive number
-        Integer positiveNum = 5;
-        Integer result = ClassesObjectsMethods.calculateAbsoluteValue(positiveNum);
-        Assert.areEqual(5, result, 'Incorrect absolute value for positive number');
-
-        // Test with negative number
-        Integer negativeNum = -3;
-        result = ClassesObjectsMethods.calculateAbsoluteValue(negativeNum);
-        Assert.areEqual(3, result, 'Incorrect absolute value for negative number');
-
-        // Test with zero
-        Integer zeroNum = 0;
-        result = ClassesObjectsMethods.calculateAbsoluteValue(zeroNum);
-        Assert.areEqual(0, result, 'Incorrect absolute value for zero');
-
-        // Test with null
-        Integer nullNum = null;
-        result = ClassesObjectsMethods.calculateAbsoluteValue(nullNum);
-        Assert.isNull(result, 'Result should be null for null input');
     }
 
     /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
