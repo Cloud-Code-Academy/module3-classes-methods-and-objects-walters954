@@ -247,12 +247,12 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
-     * Create and update two Book objects and returns the details of both books.
+     * Create and update two Book objects and returns the books.
      * For example, generateBookList(Book) should return a list like ["Title: Harry Potter and the Chamber of Secrets, Author: J.K. Rowling", "Title: A Brief History of Time, Author: Stephen Hawking"].
      * Update Book 1 values: title = "Harry Potter and the Chamber of Secrets", author = "J.K. Rowling", pages = 352
      * Book 2 values: title = "A Brief History of Time", author = "Stephen Hawking"
      * @param myBook1 The first book object.
-     * @return A string containing the details of the book.
+     * @return return a list of books.
      */
     public static List<Book> generateBookList(Book myBook1) {
         // Create a list of books
