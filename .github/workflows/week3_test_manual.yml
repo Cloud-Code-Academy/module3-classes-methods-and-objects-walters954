@@ -1,4 +1,4 @@
-name: Week 3 Run Apex Unit Tests Manually
+name: Module 3 Run Apex Unit Tests Manually
 
 on:
     workflow_dispatch:

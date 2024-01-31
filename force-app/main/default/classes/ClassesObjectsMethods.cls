@@ -30,7 +30,9 @@
  */
 
 public with sharing class ClassesObjectsMethods {
+    
     /**
+     * Question 1
      * It initializes a String to "Hello, Salesforce!" and demonstrates usage of
      * the length, substring, and toLowerCase methods of the String class.
      * Example: practiceStringMethods() should return a list like ["17", "Hello", "hello, salesforce!"].
@@ -52,6 +54,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 2
      * Check if the input string starts with 'Sales', ends with 'Force', and contains 'Awesome'.
      * Example: checkStringContent('Salesforce is Awesome!') should return a list like [true, false, true].
      * @param input The input string.
@@ -70,6 +73,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 3
      * Take a sentence then remove any duplicate words, and return the sentence with only unique words.
      * Example: removeDuplicateWords('Hello, Hello, Salesforce!') should return 'Hello, Salesforce!'.
      * @param sentence The input sentence.
@@ -89,6 +93,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 4
      * This method takes a string as a parameter, and calculates the number of vowels in the string.
      * For simplicity, we will consider only five vowels: 'a', 'e', 'i', 'o', 'u', and we will ignore case.
      * Example: countVowels("Hello World!") should return 3
@@ -110,6 +115,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 5
      * Given a list of scientist names, combine their names together with a comma if it contains the letter 'g'.
      * The final string should not end with a comma.
      * Example: findTheScientist() should return "Alan Turing,Grace Hopper,Guido van Rossum,Stephen Hawking"
@@ -133,6 +139,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 6
      * This method calculates the absolute value of the difference between of two input numbers that are raised to the 2nd power.
      * Example: calculateDifferenceOfSquares(3, 4) should return 7.
      * @param a The first number.
@@ -149,6 +156,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 7
      * Generate a random number between 50 and 100
      * Example: generateRandomNumber() should return a number like 75.
      * @return A integer between 50 and 100.
@@ -161,6 +169,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 8
      * Format the current date in the current user locale format.
      * Example: getCurrentDate() should return a string like "3/21/2001" for US locale users. Locale/String may differ depending on your location.
      * @return The current date in the current user locale format.
@@ -175,6 +184,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 9
      * Given a date time return the day of the week in number format
      * @param dt the current date and time
      * @return The number of the day of the week for the given date.
@@ -193,6 +203,7 @@ public with sharing class ClassesObjectsMethods {
 
 
     /**
+     * Question 10
      * Calculate the difference between the years of two dates
      * For example, if the first date is 2023-01-01 and the second date is 2025-12-31, the method should return 2
      * If either of the dates is null, return null.
@@ -208,6 +219,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 11
      * The Book class represents a book in a library. 
      * Each Book object has a title and an author, and methods to return these details.
      * This class can be used in the context of a library management system, bookstore, etc.
@@ -233,6 +245,7 @@ public with sharing class ClassesObjectsMethods {
     
 
     /**
+     * Question 12
      * Create a Book object and returns the details of the book.
      * For example, createAndGetBookDetails() should return a string like "Title: A Brief History of Time, Author: Stephen Hawking".
      * @return A string containing the details of the book.
@@ -247,6 +260,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 13
      * Create and update two Book objects and returns the books.
      * For example, generateBookList(Book) should return a list like ["Title: Harry Potter and the Chamber of Secrets, Author: J.K. Rowling", "Title: A Brief History of Time, Author: Stephen Hawking"].
      * Update Book 1 values: title = "Harry Potter and the Chamber of Secrets", author = "J.K. Rowling", pages = 352
@@ -272,6 +286,7 @@ public with sharing class ClassesObjectsMethods {
 
 
     /**
+     * Question 14
      * The Person class represents a person.
      * Each Person object has a name and an age, and methods to return these details.
      * This class can be used in the context of a school, college, etc.
@@ -296,6 +311,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 15
      * Create a Person object and returns the details of the person.
      * For example, personDetails() should return a list like ["Hello, my name is John Doe and I am 28 years old.", "John Doe", "28"].
      * @return A string containing the details of the person.
@@ -316,8 +332,8 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 16
      * Create a Person object with the provided name and age.
-     * 
      * @param name The name of the person.
      * @param age The age of the person.
      * @return A new instance of the Person class.
@@ -330,6 +346,7 @@ public with sharing class ClassesObjectsMethods {
     }
 
     /**
+     * Question 17
      * Create a method that constructs multiple Person objects.
      * You are to create a new Person object for each name in the provided List<String> of names,
      * using the same age for all Person objects. The method should return a List<Person> of all the Person objects created. 
@@ -351,6 +368,7 @@ public with sharing class ClassesObjectsMethods {
 
 
     /**
+     * Question 18
      * Compare two Person objects based on their ages.
      * If the first Person is older, the method should return the first Person. If the second Person is older, it should return the second Person.
      * If they are the same age, return either.
