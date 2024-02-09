@@ -75,7 +75,7 @@ public with sharing class ClassesObjectsMethods {
     /**
      * Question 3
      * Take a sentence then remove any duplicate words, and return the sentence with only unique words.
-     * Example: removeDuplicateWords('Hello, Hello, Salesforce!') should return 'Hello, Salesforce!'.
+     * Example: removeDuplicateWords('Hello Hello Salesforce Salesforce') should return 'Hello Salesforce'.
      * @param sentence The input sentence.
      * @return A string consisting of only unique words from the input sentence.
      */
