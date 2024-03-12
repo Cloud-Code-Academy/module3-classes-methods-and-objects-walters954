@@ -5,7 +5,7 @@
  * This class introduces developers to the concept of creating and manipulating objects in Apex. It discusses
  * how to define classes, create methods, and use objects. This class uses two example classes - Person and Book.
  * 
- * Topics covered in this class include:
+ * Topics covered in this class include: 
  * - Understanding how to define a class in Apex.
  * - Understanding how to create methods in Apex.
  * - Understanding how to instantiate objects of a class.
